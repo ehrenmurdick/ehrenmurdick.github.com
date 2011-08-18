@@ -26,3 +26,8 @@ body {
 .video {
   margin-bottom: 2em;
 }
+
+.navlink-wrapper {
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #DDD;
+}
