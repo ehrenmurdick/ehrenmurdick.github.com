@@ -21,10 +21,7 @@
   	</div>
 
     <div class="span-4">
-      {% for post in site.posts limit:5 %}
-        <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-        <em>{{ post.date | date_to_long_string }}</em>
-      {% endfor %}
+      {% include nav.html %}
     </div>
 
   	<div class="span-14 border">
