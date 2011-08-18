@@ -24,7 +24,7 @@
       {% endfor %}
     </div>
 
-  	<div class="span-14 colborder">
+  	<div class="span-14 border">
       {% if page.url == "/index.html" %}
         <h2>{{ site.posts.first.title }}</h2>
         {{ site.posts.first.content }}
@@ -35,6 +35,7 @@
   	</div>
 
   	<div class="span-6 last">
+      {% include twitter.html %}
   	</div>
 	
   	<div class="span-24">
