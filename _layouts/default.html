@@ -31,11 +31,11 @@
       <h1><a href="/">Ehren Murdick</a></h1>
   	</div>
 
-    <div class="span-4">
+    <div class="span-4 navbar">
       {% include nav.html %}
     </div>
 
-  	<div class="span-14 border">
+  	<div class="span-14 border content">
       {% if page.url == "/index.html" %}
         <h2>{{ site.posts.first.title }}</h2>
         {{ site.posts.first.content }}
