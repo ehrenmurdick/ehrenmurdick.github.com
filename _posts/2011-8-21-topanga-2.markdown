@@ -1,0 +1,17 @@
+---
+layout: default
+title: Topanga part 2
+---
+
+Another video of the more canyon-y parts of Topanga Canyon.
+
+<div class="video">
+<object width="500" height="311"><param name="movie" value="http://www.youtube.com/v/-IC0bMwOZeE?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/-IC0bMwOZeE?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="500" height="311" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+</div>
+
+
+Also, this is why a motorcycle is the best way to get around LA:
+
+<div class="video">
+<object width="500" height="281"><param name="movie" value="http://www.youtube.com/v/rxQD7VhlhgM?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/rxQD7VhlhgM?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="500" height="281" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+</div>
