@@ -1,0 +1,10 @@
+---
+layout: default
+title: Coding
+---
+
+This is what I look like when I'm coding
+
+<img src="/images/coding.jpg" />
+
+You have to wear aviator sunglasses to live in LA
