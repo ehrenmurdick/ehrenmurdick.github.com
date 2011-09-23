@@ -5,6 +5,6 @@ title: Coding
 
 This is what I look like when I'm coding
 
-<img src="/images/coding.jpg" />
+<img src="/images/coding.jpg" width="535" />
 
 You have to wear aviator sunglasses to live in LA
