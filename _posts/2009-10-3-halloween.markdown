@@ -4,7 +4,7 @@ title: Halloween 2009
 ---
 
 
-I dressed up as the Shadow. 
+Who knows what evil lurks in the hearts of men? The Shadow knows!
 
 <a href="http://www.flickr.com/photos/ehrenmurdick/4819572295/" title="IMG_0076 by ehrenmurdick, on Flickr"><img src="http://farm5.static.flickr.com/4122/4819572295_46df637c0f_z.jpg" width="480" height="640" alt="IMG_0076"></a>
 
