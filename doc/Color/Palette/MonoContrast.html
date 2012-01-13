@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Color::Palette::MonoContrast</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/color/palette/monocontrast_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/color/palette/monocontrast.rb">lib/color/palette/monocontrast.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="../../Object.html">Object</a></p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-brightness_diff">#brightness_diff</a></li>
+          
+          <li><a href="#method-i-calculate_foreground">#calculate_foreground</a></li>
+          
+          <li><a href="#method-i-color_diff">#color_diff</a></li>
+          
+          <li><a href="#method-i-regenerate">#regenerate</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="../../Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="../../Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="../../Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="../../README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="../../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Color.html">Color</a></li>
+        
+          <li><a href="../../Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="../../Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="../../Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="../../Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="../../Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="../../Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="../../Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="../../Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="../../Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="../../Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="../../Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="../../Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="../../TestColor.html">TestColor</a></li>
+        
+          <li><a href="../../TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="../../TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="../../TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="../../TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="../../TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="../../TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="../../TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="../../TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="../../ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="../../ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="../../ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="../../ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="../../ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="../../ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="../../ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="../../ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="../../ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="../../Errno.html">Errno</a></li>
+        
+          <li><a href="../../Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="../../Installer.html">Installer</a></li>
+        
+          <li><a href="../../Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="../../Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="../../File.html">File</a></li>
+        
+          <li><a href="../../FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="../../HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="../../Object.html">Object</a></li>
+        
+          <li><a href="../../SetupError.html">SetupError</a></li>
+        
+          <li><a href="../../ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="../../ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Color::Palette::MonoContrast</h1>
+
+    <div id="description">
+      
+<p>Generates a monochromatic constrasting colour palette for background and
+foreground. What does this mean?</p>
+
+<p>Monochromatic: A single colour is used to generate the base palette, and
+this colour is lightened five times and darkened five times to provide
+eleven distinct colours.</p>
+
+<p>Contrasting: The foreground is also generated as a monochromatic colour
+palette; however, all generated colours are tested to see that they are
+appropriately contrasting to ensure maximum readability of the foreground
+against the background.</p>
+
+    </div>
+
+    <!-- Constants -->
+    
+    <div id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt><a name="DEFAULT_MINIMUM_BRIGHTNESS_DIFF">DEFAULT_MINIMUM_BRIGHTNESS_DIFF</a></dt>
+        
+        <dd class="description"></dd>
+        
+      
+        <dt><a name="DEFAULT_MINIMUM_COLOR_DIFF">DEFAULT_MINIMUM_COLOR_DIFF</a></dt>
+        
+        <dd class="description"></dd>
+        
+      
+      </dl>
+    </div>
+    
+
+    <!-- Attributes -->
+    
+    <div id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="background-attribute-method" class="method-detail">
+        <a name="background"></a>
+        
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">background</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Hash of <a href="../CSS.html">CSS</a> background colour values.</p>
+
+<p>This is always 11 values:</p>
+<table class="rdoc-list"><tr><td class="rdoc-term"><p>0</p></td>
+<td>
+<p>The starting colour.</p>
+</td></tr><tr><td class="rdoc-term"><p>+1..+5</p></td>
+<td>
+<p>Lighter colours.</p>
+</td></tr><tr><td class="rdoc-term"><p>-1..-5</p></td>
+<td>
+<p>Darker colours.</p>
+</td></tr></table>
+        
+        </div>
+      </div>
+      
+      <div id="foreground-attribute-method" class="method-detail">
+        <a name="foreground"></a>
+        
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">foreground</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Hash of <a href="../CSS.html">CSS</a> foreground colour values.</p>
+
+<p>This is always 11 values:</p>
+<table class="rdoc-list"><tr><td class="rdoc-term"><p>0</p></td>
+<td>
+<p>The starting colour.</p>
+</td></tr><tr><td class="rdoc-term"><p>+1..+5</p></td>
+<td>
+<p>Lighter colours.</p>
+</td></tr><tr><td class="rdoc-term"><p>-1..-5</p></td>
+<td>
+<p>Darker colours.</p>
+</td></tr></table>
+        
+        </div>
+      </div>
+      
+      <div id="minimum_brightness_diff-attribute-method" class="method-detail">
+        <a name="minimum_brightness_diff"></a>
+        
+        <a name="minimum_brightness_diff="></a>
+        
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">minimum_brightness_diff</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The minimum brightness difference between the background and the
+foreground, and must be between 0..1. Setting this value will regenerate
+the palette based on the base colours. The default value for this is 125 /
+255.0. If this value is set to <tt>nil</tt>, it will be restored to the
+default.</p>
+        
+        </div>
+      </div>
+      
+      <div id="minimum_color_diff-attribute-method" class="method-detail">
+        <a name="minimum_color_diff"></a>
+        
+        <a name="minimum_color_diff="></a>
+        
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">minimum_color_diff</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>The minimum colour difference between the background and the foreground,
+and must be between 0..3. Setting this value will regenerate the palette
+based on the base colours. The default value for this is 500 / 255.0.</p>
+        
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- Methods -->
+    
+    <div id="public-class-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="new-method" class="method-detail ">
+        <a name="method-c-new"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(background, foreground = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Generate the initial palette.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/color/palette/monocontrast.rb, line 88</span>
+def initialize(background, foreground = nil)
+  <span class="ruby-ivar">@minimum_brightness_diff</span> = <span class="ruby-constant">DEFAULT_MINIMUM_BRIGHTNESS_DIFF</span>
+  <span class="ruby-ivar">@minimum_color_diff</span> = <span class="ruby-constant">DEFAULT_MINIMUM_COLOR_DIFF</span>
+
+  regenerate(background, foreground)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="brightness_diff-method" class="method-detail ">
+        <a name="method-i-brightness_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">brightness_diff</span><span
+            class="method-args">(c1, c2)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the absolute difference between the brightness levels of two
+colours. This will be a decimal value between 0 and 1. W3C accessibility
+guidelines for colour <a
+href="http://www.w3.org/TR/AERT#color-contrast">contrast</a> suggest that
+this value be at least approximately 0.49 (125 / 255.0) for proper
+contrast.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="brightness_diff-source">
+<pre>
+<span class="ruby-comment"># File lib/color/palette/monocontrast.rb, line 166</span>
+def brightness_diff(c1, c2)
+  (c1.brightness - c2.brightness).abs
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="calculate_foreground-method" class="method-detail ">
+        <a name="method-i-calculate_foreground"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">calculate_foreground</span><span
+            class="method-args">(background, foreground)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Given a background colour and a foreground colour, modifies the foreground
+colour so that it will have enough contrast to be seen against the
+background colour.</p>
+
+<p>Uses #mininum_brightness_diff and <a
+href="MonoContrast.html#attribute-i-minimum_color_diff">minimum_color_diff</a>.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="calculate_foreground-source">
+<pre>
+<span class="ruby-comment"># File lib/color/palette/monocontrast.rb, line 134</span>
+def calculate_foreground(background, foreground)
+  nfg = nil
+  <span class="ruby-comment"># Loop through brighter and darker versions of the foreground color. The</span>
+  <span class="ruby-comment"># numbers here represent the amount of foreground color to mix with</span>
+  <span class="ruby-comment"># black and white.</span>
+  [100, 75, 50, 25, 0].each do |percent|
+    dfg = foreground.darken_by(percent)
+    lfg = foreground.lighten_by(percent)
+
+    dbd = brightness_diff(background, dfg)
+    lbd = brightness_diff(background, lfg)
+
+    if lbd &gt; dbd
+      nfg = lfg
+      nbd = lbd
+    else
+      nfg = dfg
+      nbd = dbd
+    end
+
+    ncd = color_diff(background, nfg)
+
+    break if nbd &gt;= <span class="ruby-ivar">@minimum_brightness_diff</span> and ncd &gt;= <span class="ruby-ivar">@minimum_color_diff</span>
+  end
+  nfg
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="color_diff-method" class="method-detail ">
+        <a name="method-i-color_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">color_diff</span><span
+            class="method-args">(c1, c2)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the contrast between to colours, a decimal value between 0 and</p>
+<ol><li>
+<p>W3C accessibility guidelines for colour</p>
+</li></ol>
+
+<p><a href="http://www.w3.org/TR/AERT#color-contrast">contrast</a> suggest
+that this value be at least approximately 1.96 (500 / 255.0) for proper
+contrast.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="color_diff-source">
+<pre>
+<span class="ruby-comment"># File lib/color/palette/monocontrast.rb, line 174</span>
+def color_diff(c1, c2)
+  r = (c1.r - c2.r).abs
+  g = (c1.g - c2.g).abs
+  b = (c1.b - c2.b).abs
+  r + g + b
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="regenerate-method" class="method-detail ">
+        <a name="method-i-regenerate"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">regenerate</span><span
+            class="method-args">(background, foreground = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Generate the colour palettes.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="regenerate-source">
+<pre>
+<span class="ruby-comment"># File lib/color/palette/monocontrast.rb, line 96</span>
+def regenerate(background, foreground = nil)
+  foreground ||= background
+  background = background.to_rgb
+  foreground = foreground.to_rgb
+
+  <span class="ruby-ivar">@background</span> = {}
+  <span class="ruby-ivar">@foreground</span> = {}
+
+  <span class="ruby-ivar">@background</span>[-5] = background.darken_by(10)
+  <span class="ruby-ivar">@background</span>[-4] = background.darken_by(25)
+  <span class="ruby-ivar">@background</span>[-3] = background.darken_by(50)
+  <span class="ruby-ivar">@background</span>[-2] = background.darken_by(75)
+  <span class="ruby-ivar">@background</span>[-1] = background.darken_by(85)
+  <span class="ruby-ivar">@background</span>[ 0] = background
+  <span class="ruby-ivar">@background</span>[+1] = background.lighten_by(85)
+  <span class="ruby-ivar">@background</span>[+2] = background.lighten_by(75)
+  <span class="ruby-ivar">@background</span>[+3] = background.lighten_by(50)
+  <span class="ruby-ivar">@background</span>[+4] = background.lighten_by(25)
+  <span class="ruby-ivar">@background</span>[+5] = background.lighten_by(10)
+
+  <span class="ruby-ivar">@foreground</span>[-5] = calculate_foreground(<span class="ruby-ivar">@background</span>[-5], foreground)
+  <span class="ruby-ivar">@foreground</span>[-4] = calculate_foreground(<span class="ruby-ivar">@background</span>[-4], foreground)
+  <span class="ruby-ivar">@foreground</span>[-3] = calculate_foreground(<span class="ruby-ivar">@background</span>[-3], foreground)
+  <span class="ruby-ivar">@foreground</span>[-2] = calculate_foreground(<span class="ruby-ivar">@background</span>[-2], foreground)
+  <span class="ruby-ivar">@foreground</span>[-1] = calculate_foreground(<span class="ruby-ivar">@background</span>[-1], foreground)
+  <span class="ruby-ivar">@foreground</span>[ 0] = calculate_foreground(<span class="ruby-ivar">@background</span>[ 0], foreground)
+  <span class="ruby-ivar">@foreground</span>[+1] = calculate_foreground(<span class="ruby-ivar">@background</span>[+1], foreground)
+  <span class="ruby-ivar">@foreground</span>[+2] = calculate_foreground(<span class="ruby-ivar">@background</span>[+2], foreground)
+  <span class="ruby-ivar">@foreground</span>[+3] = calculate_foreground(<span class="ruby-ivar">@background</span>[+3], foreground)
+  <span class="ruby-ivar">@foreground</span>[+4] = calculate_foreground(<span class="ruby-ivar">@background</span>[+4], foreground)
+  <span class="ruby-ivar">@foreground</span>[+5] = calculate_foreground(<span class="ruby-ivar">@background</span>[+5], foreground)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

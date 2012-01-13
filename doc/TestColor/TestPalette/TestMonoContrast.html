@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: TestColor::TestPalette::TestMonoContrast</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../test/test_monocontrast_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="test/test_monocontrast.rb">test/test_monocontrast.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Test::Unit::TestCase</p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-setup">#setup</a></li>
+          
+          <li><a href="#method-i-test_background">#test_background</a></li>
+          
+          <li><a href="#method-i-test_brightness_diff">#test_brightness_diff</a></li>
+          
+          <li><a href="#method-i-test_calculate_foreground">#test_calculate_foreground</a></li>
+          
+          <li><a href="#method-i-test_color_diff">#test_color_diff</a></li>
+          
+          <li><a href="#method-i-test_foreground">#test_foreground</a></li>
+          
+          <li><a href="#method-i-test_minimum_brightness_diff">#test_minimum_brightness_diff</a></li>
+          
+          <li><a href="#method-i-test_minimum_brightness_diff_equals">#test_minimum_brightness_diff_equals</a></li>
+          
+          <li><a href="#method-i-test_minimum_color_diff">#test_minimum_color_diff</a></li>
+          
+          <li><a href="#method-i-test_minimum_color_diff_equals">#test_minimum_color_diff_equals</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><a class="include" href="../../Color/Palette.html">Color::Palette</a></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="../../Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="../../Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="../../Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="../../README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="../../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Color.html">Color</a></li>
+        
+          <li><a href="../../Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="../../Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="../../Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="../../Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="../../Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="../../Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="../../Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="../../Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="../../Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="../../Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="../../Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="../../Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="../../TestColor.html">TestColor</a></li>
+        
+          <li><a href="../../TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="../../TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="../../TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="../../TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="../../TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="../../TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="../../TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="../../TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="../../TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="../../ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="../../ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="../../ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="../../ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="../../ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="../../ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="../../ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="../../ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="../../ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="../../Errno.html">Errno</a></li>
+        
+          <li><a href="../../Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="../../Installer.html">Installer</a></li>
+        
+          <li><a href="../../Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="../../Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="../../File.html">File</a></li>
+        
+          <li><a href="../../FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="../../HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="../../Object.html">Object</a></li>
+        
+          <li><a href="../../SetupError.html">SetupError</a></li>
+        
+          <li><a href="../../ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="../../ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">TestColor::TestPalette::TestMonoContrast</h1>
+
+    <div id="description">
+      
+    </div>
+
+    <!-- Constants -->
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="setup-method" class="method-detail ">
+        <a name="method-i-setup"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">setup</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="setup-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 23</span>
+def setup
+  <span class="ruby-ivar">@high</span> = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#c9e3a6&quot;)
+  <span class="ruby-ivar">@low</span>  = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#746b8e&quot;)
+  <span class="ruby-ivar">@mcp1</span> = <span class="ruby-constant">MonoContrast</span>.new(<span class="ruby-ivar">@high</span>)
+  <span class="ruby-ivar">@mcp2</span> = <span class="ruby-constant">MonoContrast</span>.new(<span class="ruby-ivar">@low</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_background-method" class="method-detail ">
+        <a name="method-i-test_background"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_background</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_background-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 30</span>
+def test_background
+  assert_equal(&quot;#141711&quot;, <span class="ruby-ivar">@mcp1</span>.background[-5].html)
+  assert_equal(&quot;#32392a&quot;, <span class="ruby-ivar">@mcp1</span>.background[-4].html)
+  assert_equal(&quot;#657253&quot;, <span class="ruby-ivar">@mcp1</span>.background[-3].html)
+  assert_equal(&quot;#97aa7d&quot;, <span class="ruby-ivar">@mcp1</span>.background[-2].html)
+  assert_equal(&quot;#abc18d&quot;, <span class="ruby-ivar">@mcp1</span>.background[-1].html)
+  assert_equal(&quot;#c9e3a6&quot;, <span class="ruby-ivar">@mcp1</span>.background[ 0].html)
+  assert_equal(&quot;#d1e7b3&quot;, <span class="ruby-ivar">@mcp1</span>.background[+1].html)
+  assert_equal(&quot;#d7eabc&quot;, <span class="ruby-ivar">@mcp1</span>.background[+2].html) <span class="ruby-comment"># d7eabd</span>
+  assert_equal(&quot;#e4f1d3&quot;, <span class="ruby-ivar">@mcp1</span>.background[+3].html) <span class="ruby-comment"># e5f2d3</span>
+  assert_equal(&quot;#f2f8e9&quot;, <span class="ruby-ivar">@mcp1</span>.background[+4].html) <span class="ruby-comment"># f1f8e9</span>
+  assert_equal(&quot;#fafcf6&quot;, <span class="ruby-ivar">@mcp1</span>.background[+5].html) <span class="ruby-comment"># fafdf7</span>
+
+  assert_equal(&quot;#0c0b0e&quot;, <span class="ruby-ivar">@mcp2</span>.background[-5].html)
+  assert_equal(&quot;#1d1b24&quot;, <span class="ruby-ivar">@mcp2</span>.background[-4].html)
+  assert_equal(&quot;#3a3647&quot;, <span class="ruby-ivar">@mcp2</span>.background[-3].html)
+  assert_equal(&quot;#57506b&quot;, <span class="ruby-ivar">@mcp2</span>.background[-2].html)
+  assert_equal(&quot;#635b79&quot;, <span class="ruby-ivar">@mcp2</span>.background[-1].html)
+  assert_equal(&quot;#746b8e&quot;, <span class="ruby-ivar">@mcp2</span>.background[ 0].html)
+  assert_equal(&quot;#89819f&quot;, <span class="ruby-ivar">@mcp2</span>.background[+1].html)
+  assert_equal(&quot;#9790aa&quot;, <span class="ruby-ivar">@mcp2</span>.background[+2].html) <span class="ruby-comment"># 9790ab</span>
+  assert_equal(&quot;#bab5c7&quot;, <span class="ruby-ivar">@mcp2</span>.background[+3].html) <span class="ruby-comment"># bab6c7</span>
+  assert_equal(&quot;#dcdae3&quot;, <span class="ruby-ivar">@mcp2</span>.background[+4].html)
+  assert_equal(&quot;#f1f0f4&quot;, <span class="ruby-ivar">@mcp2</span>.background[+5].html) <span class="ruby-comment"># f2f1f4</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_brightness_diff-method" class="method-detail ">
+        <a name="method-i-test_brightness_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_brightness_diff</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_brightness_diff-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 56</span>
+def test_brightness_diff
+  bd1 = <span class="ruby-ivar">@mcp1</span>.brightness_diff(<span class="ruby-ivar">@high</span>, <span class="ruby-ivar">@low</span>)
+  bd2 = <span class="ruby-ivar">@mcp1</span>.brightness_diff(<span class="ruby-ivar">@low</span>, <span class="ruby-ivar">@high</span>)
+  assert_in_delta(bd1, bd2, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_calculate_foreground-method" class="method-detail ">
+        <a name="method-i-test_calculate_foreground"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_calculate_foreground</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_calculate_foreground-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 62</span>
+def test_calculate_foreground
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp1</span>.calculate_foreground(<span class="ruby-ivar">@low</span>, <span class="ruby-ivar">@high</span>).html)
+  assert_equal(&quot;#1d1b24&quot;, <span class="ruby-ivar">@mcp1</span>.calculate_foreground(<span class="ruby-ivar">@high</span>, <span class="ruby-ivar">@low</span>).html)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_color_diff-method" class="method-detail ">
+        <a name="method-i-test_color_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_color_diff</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_color_diff-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 67</span>
+def test_color_diff
+  assert_in_delta(<span class="ruby-ivar">@mcp1</span>.color_diff(<span class="ruby-ivar">@low</span>, <span class="ruby-ivar">@high</span>),
+                  <span class="ruby-ivar">@mcp1</span>.color_diff(<span class="ruby-ivar">@high</span>, <span class="ruby-ivar">@low</span>),
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_foreground-method" class="method-detail ">
+        <a name="method-i-test_foreground"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_foreground</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_foreground-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 73</span>
+def test_foreground
+  assert_equal(&quot;#c9e3a6&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[-5].html)
+  assert_equal(&quot;#e4f1d3&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[-4].html) <span class="ruby-comment"># e5f2d3</span>
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[-3].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[-2].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[-1].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[ 0].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[+1].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[+2].html)
+  assert_equal(&quot;#32392a&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[+3].html)
+  assert_equal(&quot;#32392a&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[+4].html)
+  assert_equal(&quot;#32392a&quot;, <span class="ruby-ivar">@mcp1</span>.foreground[+5].html)
+
+  assert_equal(&quot;#bab5c7&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[-5].html) <span class="ruby-comment"># bab6c7</span>
+  assert_equal(&quot;#dcdae3&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[-4].html)
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[-3].html)
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[-2].html)
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[-1].html)
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[ 0].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[+1].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[+2].html)
+  assert_equal(&quot;#000000&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[+3].html)
+  assert_equal(&quot;#1d1b24&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[+4].html)
+  assert_equal(&quot;#3a3647&quot;, <span class="ruby-ivar">@mcp2</span>.foreground[+5].html)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_minimum_brightness_diff-method" class="method-detail ">
+        <a name="method-i-test_minimum_brightness_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_minimum_brightness_diff</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_minimum_brightness_diff-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 99</span>
+def test_minimum_brightness_diff
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_BRIGHTNESS_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_minimum_brightness_diff_equals-method" class="method-detail ">
+        <a name="method-i-test_minimum_brightness_diff_equals"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_minimum_brightness_diff_equals</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_minimum_brightness_diff_equals-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 104</span>
+def test_minimum_brightness_diff_equals
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_BRIGHTNESS_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  mcps = <span class="ruby-ivar">@mcp1</span>.dup
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff = 0.75 }
+  assert_in_delta(0.75, <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_not_equal(<span class="ruby-ivar">@mcp1</span>.foreground[-5], mcps.foreground[-5])
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff = 4.0 }
+  assert_in_delta(1, <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff = -4.0 }
+  assert_in_delta(0, <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff = nil }
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_BRIGHTNESS_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_brightness_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_minimum_color_diff-method" class="method-detail ">
+        <a name="method-i-test_minimum_color_diff"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_minimum_color_diff</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_minimum_color_diff-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 120</span>
+def test_minimum_color_diff
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_COLOR_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_minimum_color_diff_equals-method" class="method-detail ">
+        <a name="method-i-test_minimum_color_diff_equals"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_minimum_color_diff_equals</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_minimum_color_diff_equals-source">
+<pre>
+<span class="ruby-comment"># File test/test_monocontrast.rb, line 125</span>
+def test_minimum_color_diff_equals
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_COLOR_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  mcps = <span class="ruby-ivar">@mcp1</span>.dup
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_color_diff = 0.75 }
+  assert_in_delta(0.75, <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_not_equal(<span class="ruby-ivar">@mcp1</span>.foreground[-5], mcps.foreground[-5])
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_color_diff = 4.0 }
+  assert_in_delta(3, <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_color_diff = -4.0 }
+  assert_in_delta(0, <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@mcp1</span>.minimum_color_diff = nil }
+  assert_in_delta(<span class="ruby-constant">MonoContrast</span>::<span class="ruby-constant">DEFAULT_MINIMUM_COLOR_DIFF</span>,
+                  <span class="ruby-ivar">@mcp1</span>.minimum_color_diff, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

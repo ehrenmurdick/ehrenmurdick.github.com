@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: TestColor::TestCMYK</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../test/test_cmyk_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="test/test_cmyk.rb">test/test_cmyk.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Test::Unit::TestCase</p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-setup">#setup</a></li>
+          
+          <li><a href="#method-i-test_black">#test_black</a></li>
+          
+          <li><a href="#method-i-test_cyan">#test_cyan</a></li>
+          
+          <li><a href="#method-i-test_inspect">#test_inspect</a></li>
+          
+          <li><a href="#method-i-test_magenta">#test_magenta</a></li>
+          
+          <li><a href="#method-i-test_pdf">#test_pdf</a></li>
+          
+          <li><a href="#method-i-test_to_cmyk">#test_to_cmyk</a></li>
+          
+          <li><a href="#method-i-test_to_grayscale">#test_to_grayscale</a></li>
+          
+          <li><a href="#method-i-test_to_hsl">#test_to_hsl</a></li>
+          
+          <li><a href="#method-i-test_to_rgb">#test_to_rgb</a></li>
+          
+          <li><a href="#method-i-test_to_yiq">#test_to_yiq</a></li>
+          
+          <li><a href="#method-i-test_yellow">#test_yellow</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="../Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="../Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="../Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="../README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Color.html">Color</a></li>
+        
+          <li><a href="../Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="../Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="../Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="../Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="../Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="../Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="../Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="../Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="../Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="../Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="../TestColor.html">TestColor</a></li>
+        
+          <li><a href="../TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="../TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="../TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="../TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="../TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="../TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="../TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="../TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="../ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="../ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="../ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="../ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="../ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="../ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="../ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="../ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="../ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="../Errno.html">Errno</a></li>
+        
+          <li><a href="../Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="../Installer.html">Installer</a></li>
+        
+          <li><a href="../Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="../Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="../File.html">File</a></li>
+        
+          <li><a href="../FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="../HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="../Object.html">Object</a></li>
+        
+          <li><a href="../SetupError.html">SetupError</a></li>
+        
+          <li><a href="../ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="../ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">TestColor::TestCMYK</h1>
+
+    <div id="description">
+      
+    </div>
+
+    <!-- Constants -->
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="setup-method" class="method-detail ">
+        <a name="method-i-setup"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">setup</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="setup-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 20</span>
+def setup
+  <span class="ruby-ivar">@cmyk</span> = <span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(10, 20, 30, 40)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_black-method" class="method-detail ">
+        <a name="method-i-test_black"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_black</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_black-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 57</span>
+def test_black
+  assert_in_delta(0.4, <span class="ruby-ivar">@cmyk</span>.k, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(40, <span class="ruby-ivar">@cmyk</span>.black, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.black = 20 }
+  assert_in_delta(0.2, <span class="ruby-ivar">@cmyk</span>.k, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.k = 2.0 }
+  assert_in_delta(100, <span class="ruby-ivar">@cmyk</span>.black, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.k = -1.0 }
+  assert_in_delta(0.0, <span class="ruby-ivar">@cmyk</span>.k, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_cyan-method" class="method-detail ">
+        <a name="method-i-test_cyan"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_cyan</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_cyan-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 24</span>
+def test_cyan
+  assert_in_delta(0.1, <span class="ruby-ivar">@cmyk</span>.c, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(10, <span class="ruby-ivar">@cmyk</span>.cyan, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.cyan = 20 }
+  assert_in_delta(0.2, <span class="ruby-ivar">@cmyk</span>.c, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.c = 2.0 }
+  assert_in_delta(100, <span class="ruby-ivar">@cmyk</span>.cyan, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.c = -1.0 }
+  assert_in_delta(0.0, <span class="ruby-ivar">@cmyk</span>.c, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_inspect-method" class="method-detail ">
+        <a name="method-i-test_inspect"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_inspect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_inspect-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 115</span>
+def test_inspect
+  assert_equal(<span class="ruby-string">&quot;CMYK [10.00%, 20.00%, 30.00%, 40.00%]&quot;</span>, <span class="ruby-ivar">@cmyk</span>.inspect)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_magenta-method" class="method-detail ">
+        <a name="method-i-test_magenta"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_magenta</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_magenta-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 35</span>
+def test_magenta
+  assert_in_delta(0.2, <span class="ruby-ivar">@cmyk</span>.m, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(20, <span class="ruby-ivar">@cmyk</span>.magenta, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.magenta = 30 }
+  assert_in_delta(0.3, <span class="ruby-ivar">@cmyk</span>.m, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.m = 2.0 }
+  assert_in_delta(100, <span class="ruby-ivar">@cmyk</span>.magenta, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.m = -1.0 }
+  assert_in_delta(0.0, <span class="ruby-ivar">@cmyk</span>.m, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_pdf-method" class="method-detail ">
+        <a name="method-i-test_pdf"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_pdf</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_pdf-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 68</span>
+def test_pdf
+  assert_equal(<span class="ruby-string">&quot;0.100 0.200 0.300 0.400 k&quot;</span>, <span class="ruby-ivar">@cmyk</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;0.100 0.200 0.300 0.400 K&quot;</span>, <span class="ruby-ivar">@cmyk</span>.pdf_stroke)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_cmyk-method" class="method-detail ">
+        <a name="method-i-test_to_cmyk"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_cmyk</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_cmyk-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 73</span>
+def test_to_cmyk
+  assert(<span class="ruby-ivar">@cmyk</span>.to_cmyk == <span class="ruby-ivar">@cmyk</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_grayscale-method" class="method-detail ">
+        <a name="method-i-test_to_grayscale"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_grayscale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_grayscale-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 77</span>
+def test_to_grayscale
+  gs = nil
+  assert_nothing_raised { gs = <span class="ruby-ivar">@cmyk</span>.to_grayscale }
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>, gs)
+  assert_in_delta(0.4185, gs.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GreyScale</span>, <span class="ruby-ivar">@cmyk</span>.to_greyscale)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_hsl-method" class="method-detail ">
+        <a name="method-i-test_to_hsl"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_hsl</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_hsl-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 85</span>
+def test_to_hsl
+  hsl = nil
+  assert_nothing_raised { hsl = <span class="ruby-ivar">@cmyk</span>.to_hsl }
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>, hsl)
+  assert_in_delta(0.48, hsl.l, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.125, hsl.s, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.08333, hsl.h, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_equal(<span class="ruby-string">&quot;hsl(30.00, 12.50%, 48.00%)&quot;</span>, <span class="ruby-ivar">@cmyk</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsla(30.00, 12.50%, 48.00%, 1.00)&quot;</span>, <span class="ruby-ivar">@cmyk</span>.css_hsla)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_rgb-method" class="method-detail ">
+        <a name="method-i-test_to_rgb"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_rgb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_rgb-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 96</span>
+def test_to_rgb
+  rgb = nil
+  assert_nothing_raised { rgb = <span class="ruby-ivar">@cmyk</span>.to_rgb(true) }
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>, rgb)
+  assert_in_delta(0.5, rgb.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.4, rgb.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.3, rgb.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+
+  assert_nothing_raised { rgb = <span class="ruby-ivar">@cmyk</span>.to_rgb }
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>, rgb)
+  assert_in_delta(0.54, rgb.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.48, rgb.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.42, rgb.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+
+  assert_equal(&quot;#8a7a6b&quot;, <span class="ruby-ivar">@cmyk</span>.html)
+  assert_equal(<span class="ruby-string">&quot;rgb(54.00%, 48.00%, 42.00%)&quot;</span>, <span class="ruby-ivar">@cmyk</span>.css_rgb)
+  assert_equal(<span class="ruby-string">&quot;rgba(54.00%, 48.00%, 42.00%, 1.00)&quot;</span>, <span class="ruby-ivar">@cmyk</span>.css_rgba)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_yiq-method" class="method-detail ">
+        <a name="method-i-test_to_yiq"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_yiq</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_yiq-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 119</span>
+def test_to_yiq
+  yiq = nil
+  assert_nothing_raised { yiq = <span class="ruby-ivar">@cmyk</span>.to_yiq }
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>, yiq)
+  assert_in_delta(0.4911, yiq.y, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.05502, yiq.i, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.0, yiq.q, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_yellow-method" class="method-detail ">
+        <a name="method-i-test_yellow"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_yellow</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_yellow-source">
+<pre>
+<span class="ruby-comment"># File test/test_cmyk.rb, line 46</span>
+def test_yellow
+  assert_in_delta(0.3, <span class="ruby-ivar">@cmyk</span>.y, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(30, <span class="ruby-ivar">@cmyk</span>.yellow, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.yellow = 20 }
+  assert_in_delta(0.2, <span class="ruby-ivar">@cmyk</span>.y, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.y = 2.0 }
+  assert_in_delta(100, <span class="ruby-ivar">@cmyk</span>.yellow, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { <span class="ruby-ivar">@cmyk</span>.y = -1.0 }
+  assert_in_delta(0.0, <span class="ruby-ivar">@cmyk</span>.y, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

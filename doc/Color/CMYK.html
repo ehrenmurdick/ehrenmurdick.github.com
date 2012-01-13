@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Color::CMYK</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/color/cmyk_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/color/cmyk.rb">lib/color/cmyk.rb</a></li>
+          
+            <li><a href="../lib/color_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/color.rb">lib/color.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="../Object.html">Object</a></p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-from_fraction">::from_fraction</a></li>
+          
+          <li><a href="#method-c-from_percent">::from_percent</a></li>
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-3D-3D">#==</a></li>
+          
+          <li><a href="#method-i-black">#black</a></li>
+          
+          <li><a href="#method-i-black-3D">#black=</a></li>
+          
+          <li><a href="#method-i-c">#c</a></li>
+          
+          <li><a href="#method-i-c-3D">#c=</a></li>
+          
+          <li><a href="#method-i-css_hsl">#css_hsl</a></li>
+          
+          <li><a href="#method-i-css_hsla">#css_hsla</a></li>
+          
+          <li><a href="#method-i-css_rgb">#css_rgb</a></li>
+          
+          <li><a href="#method-i-css_rgba">#css_rgba</a></li>
+          
+          <li><a href="#method-i-cyan">#cyan</a></li>
+          
+          <li><a href="#method-i-cyan-3D">#cyan=</a></li>
+          
+          <li><a href="#method-i-html">#html</a></li>
+          
+          <li><a href="#method-i-inspect">#inspect</a></li>
+          
+          <li><a href="#method-i-k">#k</a></li>
+          
+          <li><a href="#method-i-k-3D">#k=</a></li>
+          
+          <li><a href="#method-i-m">#m</a></li>
+          
+          <li><a href="#method-i-m-3D">#m=</a></li>
+          
+          <li><a href="#method-i-magenta">#magenta</a></li>
+          
+          <li><a href="#method-i-magenta-3D">#magenta=</a></li>
+          
+          <li><a href="#method-i-pdf_fill">#pdf_fill</a></li>
+          
+          <li><a href="#method-i-pdf_stroke">#pdf_stroke</a></li>
+          
+          <li><a href="#method-i-to_cmyk">#to_cmyk</a></li>
+          
+          <li><a href="#method-i-to_grayscale">#to_grayscale</a></li>
+          
+          <li><a href="#method-i-to_greyscale">#to_greyscale</a></li>
+          
+          <li><a href="#method-i-to_hsl">#to_hsl</a></li>
+          
+          <li><a href="#method-i-to_rgb">#to_rgb</a></li>
+          
+          <li><a href="#method-i-to_yiq">#to_yiq</a></li>
+          
+          <li><a href="#method-i-y">#y</a></li>
+          
+          <li><a href="#method-i-y-3D">#y=</a></li>
+          
+          <li><a href="#method-i-yellow">#yellow</a></li>
+          
+          <li><a href="#method-i-yellow-3D">#yellow=</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="../Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="../Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="../Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="../README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Color.html">Color</a></li>
+        
+          <li><a href="../Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="../Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="../Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="../Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="../Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="../Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="../Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="../Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="../Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="../Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="../TestColor.html">TestColor</a></li>
+        
+          <li><a href="../TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="../TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="../TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="../TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="../TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="../TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="../TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="../TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="../ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="../ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="../ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="../ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="../ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="../ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="../ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="../ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="../ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="../Errno.html">Errno</a></li>
+        
+          <li><a href="../Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="../Installer.html">Installer</a></li>
+        
+          <li><a href="../Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="../Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="../File.html">File</a></li>
+        
+          <li><a href="../FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="../HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="../Object.html">Object</a></li>
+        
+          <li><a href="../SetupError.html">SetupError</a></li>
+        
+          <li><a href="../ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="../ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Color::CMYK</h1>
+
+    <div id="description">
+      
+<p>An <a href="CMYK.html">CMYK</a> colour object. <a href="CMYK.html">CMYK</a>
+(cyan, magenta, yellow, and black) colours are based on additive
+percentages of ink. A <a href="CMYK.html">CMYK</a> colour of (0.3, 0, 0.8,
+0.3) would be mixed from 30% cyan, 0% magenta, 80% yellow, and 30% black.
+Primarily used in four-colour printing processes.</p>
+
+    </div>
+
+    <!-- Constants -->
+    
+    <div id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt><a name="PDF_FORMAT_STR">PDF_FORMAT_STR</a></dt>
+        
+        <dd class="description"><p>The format of a DeviceCMYK colour for PDF. In color-tools 2.0 this will be
+removed from this package and added back as a modification by the
+PDF::Writer package.</p></dd>
+        
+      
+      </dl>
+    </div>
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-class-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="from_fraction-method" class="method-detail ">
+        <a name="method-c-from_fraction"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">from_fraction</span><span
+            class="method-args">(c = 0, m = 0, y = 0, k = 0)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a <a href="CMYK.html">CMYK</a> colour object from fractional values
+0..1.</p>
+
+<pre>Color::CMYK.from_fraction(0.3, 0, 0.8, 0.3)</pre>
+          
+
+          
+          <div class="method-source-code"
+            id="from_fraction-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 42</span>
+def self.from_fraction(c = 0, m = 0, y = 0, k = 0)
+  colour = <span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new
+  colour.c = c
+  colour.m = m
+  colour.y = y
+  colour.k = k
+  colour
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="from_percent-method" class="method-detail ">
+        <a name="method-c-from_percent"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">from_percent</span><span
+            class="method-args">(c = 0, m = 0, y = 0, k = 0)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a <a href="CMYK.html">CMYK</a> colour object from percentages.
+Internally, the colour is managed as fractional values 0..1.</p>
+
+<pre>Color::CMYK.new(30, 0, 80, 30)</pre>
+          
+
+          
+          <div class="method-source-code"
+            id="from_percent-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 55</span>
+def self.from_percent(c = 0, m = 0, y = 0, k = 0)
+  <span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(c, m, y, k)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="new-method" class="method-detail ">
+        <a name="method-c-new"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(c = 0, m = 0, y = 0, k = 0)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a <a href="CMYK.html">CMYK</a> colour object from percentages.
+Internally, the colour is managed as fractional values 0..1.</p>
+
+<pre>Color::CMYK.new(30, 0, 80, 30)</pre>
+          
+
+          
+          <div class="method-source-code"
+            id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 63</span>
+def initialize(c = 0, m = 0, y = 0, k = 0)
+  <span class="ruby-ivar">@c</span> = c / 100.0
+  <span class="ruby-ivar">@m</span> = m / 100.0
+  <span class="ruby-ivar">@y</span> = y / 100.0
+  <span class="ruby-ivar">@k</span> = k / 100.0
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="3D-3D-method" class="method-detail ">
+        <a name="method-i-3D-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">==</span><span
+            class="method-args">(other)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Compares the other colour to this one. The other colour will be converted
+to <a href="CMYK.html">CMYK</a> before comparison, so the comparison
+between a <a href="CMYK.html">CMYK</a> colour and a non-<a
+href="CMYK.html">CMYK</a> colour will be approximate and based on the other
+colour’s <a href="CMYK.html#method-i-to_cmyk">to_cmyk</a> conversion. If
+there is no <a href="CMYK.html#method-i-to_cmyk">to_cmyk</a> conversion,
+this will raise an exception. This will report that two <a
+href="CMYK.html">CMYK</a> colours are equivalent if all component values
+are within COLOR_TOLERANCE of each other.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="3D-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 30</span>
+def ==(other)
+  other = other.to_cmyk
+  other.kind_of?(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>) and
+  ((<span class="ruby-ivar">@c</span> - other.c).abs &lt;= <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>) and
+  ((<span class="ruby-ivar">@m</span> - other.m).abs &lt;= <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>) and
+  ((<span class="ruby-ivar">@y</span> - other.y).abs &lt;= <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>) and
+  ((<span class="ruby-ivar">@k</span> - other.k).abs &lt;= <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="black-method" class="method-detail ">
+        <a name="method-i-black"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">black</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the black (K) component of the <a href="CMYK.html">CMYK</a> colour
+as a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="black-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 262</span>
+def black
+  <span class="ruby-ivar">@k</span> * 100.0
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="black-3D-method" class="method-detail ">
+        <a name="method-i-black-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">black=</span><span
+            class="method-args">(kk)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the black (K) component of the <a href="CMYK.html">CMYK</a> colour as
+a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="black-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 271</span>
+def black=(kk)
+  <span class="ruby-ivar">@k</span> = <span class="ruby-constant">Color</span>.normalize(kk / 100.0)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="c-method" class="method-detail ">
+        <a name="method-i-c"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">c</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the cyan (C) component of the <a href="CMYK.html">CMYK</a> colour
+as a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="c-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 207</span>
+def c
+  <span class="ruby-ivar">@c</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="c-3D-method" class="method-detail ">
+        <a name="method-i-c-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">c=</span><span
+            class="method-args">(cc)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the cyan (C) component of the <a href="CMYK.html">CMYK</a> colour as a
+value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="c-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 216</span>
+def c=(cc)
+  <span class="ruby-ivar">@c</span> = <span class="ruby-constant">Color</span>.normalize(cc)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="css_hsl-method" class="method-detail ">
+        <a name="method-i-css_hsl"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">css_hsl</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as an <a href="HSL.html">HSL</a> HTML/CSS colour string
+(e.g., “hsl(180, 25%, 35%)”). Note that this will perform a <a
+href="CMYK.html#method-i-to_hsl">to_hsl</a> operation using the default
+conversion formula.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="css_hsl-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 106</span>
+def css_hsl
+  to_hsl.css_hsl
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="css_hsla-method" class="method-detail ">
+        <a name="method-i-css_hsla"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">css_hsla</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as an HSLA (with alpha) HTML/CSS colour string (e.g.,
+“hsla(180, 25%, 35%, 1)”). Note that this will perform a <a
+href="CMYK.html#method-i-to_hsl">to_hsl</a> operation using the default
+conversion formula.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="css_hsla-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 113</span>
+def css_hsla
+  to_hsl.css_hsla
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="css_rgb-method" class="method-detail ">
+        <a name="method-i-css_rgb"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">css_rgb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as an <a href="RGB.html">RGB</a> HTML/CSS colour string
+(e.g., “rgb(0%, 50%, 100%)”). Note that this will perform a <a
+href="CMYK.html#method-i-to_rgb">to_rgb</a> operation using the default
+conversion formula.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="css_rgb-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 92</span>
+def css_rgb
+  to_rgb.css_rgb
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="css_rgba-method" class="method-detail ">
+        <a name="method-i-css_rgba"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">css_rgba</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as an RGBA (with alpha) HTML/CSS colour string (e.g.,
+“rgb(0%, 50%, 100%, 1)”). Note that this will perform a <a
+href="CMYK.html#method-i-to_rgb">to_rgb</a> operation using the default
+conversion formula.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="css_rgba-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 99</span>
+def css_rgba
+  to_rgb.css_rgba
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="cyan-method" class="method-detail ">
+        <a name="method-i-cyan"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">cyan</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the cyan (C) component of the <a href="CMYK.html">CMYK</a> colour
+as a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="cyan-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 202</span>
+def cyan
+  <span class="ruby-ivar">@c</span> * 100.0
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="cyan-3D-method" class="method-detail ">
+        <a name="method-i-cyan-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">cyan=</span><span
+            class="method-args">(cc)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the cyan (C) component of the <a href="CMYK.html">CMYK</a> colour as a
+percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="cyan-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 211</span>
+def cyan=(cc)
+  <span class="ruby-ivar">@c</span> = <span class="ruby-constant">Color</span>.normalize(cc / 100.0)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="html-method" class="method-detail ">
+        <a name="method-i-html"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">html</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as an <a href="RGB.html">RGB</a> HTML/CSS colour string
+(e.g., “#aabbcc”). Note that this will perform a <a
+href="CMYK.html#method-i-to_rgb">to_rgb</a> operation using the default
+conversion formula.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="html-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 85</span>
+def html
+  to_rgb.html
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="inspect-method" class="method-detail ">
+        <a name="method-i-inspect"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">inspect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="inspect-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 187</span>
+def inspect
+  <span class="ruby-string">&quot;CMYK [%.2f%%, %.2f%%, %.2f%%, %.2f%%]&quot;</span> % [ cyan, magenta, yellow, black ]
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="k-method" class="method-detail ">
+        <a name="method-i-k"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">k</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the black (K) component of the <a href="CMYK.html">CMYK</a> colour
+as a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="k-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 267</span>
+def k
+  <span class="ruby-ivar">@k</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="k-3D-method" class="method-detail ">
+        <a name="method-i-k-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">k=</span><span
+            class="method-args">(kk)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the black (K) component of the <a href="CMYK.html">CMYK</a> colour as
+a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="k-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 276</span>
+def k=(kk)
+  <span class="ruby-ivar">@k</span> = <span class="ruby-constant">Color</span>.normalize(kk)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="m-method" class="method-detail ">
+        <a name="method-i-m"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">m</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the magenta (M) component of the <a href="CMYK.html">CMYK</a>
+colour as a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="m-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 227</span>
+def m
+  <span class="ruby-ivar">@m</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="m-3D-method" class="method-detail ">
+        <a name="method-i-m-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">m=</span><span
+            class="method-args">(mm)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the magenta (M) component of the <a href="CMYK.html">CMYK</a> colour
+as a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="m-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 236</span>
+def m=(mm)
+  <span class="ruby-ivar">@m</span> = <span class="ruby-constant">Color</span>.normalize(mm)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="magenta-method" class="method-detail ">
+        <a name="method-i-magenta"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">magenta</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the magenta (M) component of the <a href="CMYK.html">CMYK</a>
+colour as a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="magenta-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 222</span>
+def magenta
+  <span class="ruby-ivar">@m</span> * 100.0
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="magenta-3D-method" class="method-detail ">
+        <a name="method-i-magenta-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">magenta=</span><span
+            class="method-args">(mm)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the magenta (M) component of the <a href="CMYK.html">CMYK</a> colour
+as a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="magenta-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 231</span>
+def magenta=(mm)
+  <span class="ruby-ivar">@m</span> = <span class="ruby-constant">Color</span>.normalize(mm / 100.0)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="pdf_fill-method" class="method-detail ">
+        <a name="method-i-pdf_fill"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">pdf_fill</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as a DeviceCMYK fill colour string for PDF. This will be
+removed from the default package in color-tools 2.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="pdf_fill-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 72</span>
+def pdf_fill
+  <span class="ruby-constant">PDF_FORMAT_STR</span> % [ <span class="ruby-ivar">@c</span>, <span class="ruby-ivar">@m</span>, <span class="ruby-ivar">@y</span>, <span class="ruby-ivar">@k</span>, <span class="ruby-string">&quot;k&quot;</span> ]
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="pdf_stroke-method" class="method-detail ">
+        <a name="method-i-pdf_stroke"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">pdf_stroke</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Present the colour as a DeviceCMYK stroke colour string for PDF. This will
+be removed from the default package in color-tools 2.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="pdf_stroke-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 78</span>
+def pdf_stroke
+  <span class="ruby-constant">PDF_FORMAT_STR</span> % [ <span class="ruby-ivar">@c</span>, <span class="ruby-ivar">@m</span>, <span class="ruby-ivar">@y</span>, <span class="ruby-ivar">@k</span>, <span class="ruby-string">&quot;K&quot;</span> ]
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="to_cmyk-method" class="method-detail ">
+        <a name="method-i-to_cmyk"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_cmyk</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="to_cmyk-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 183</span>
+def to_cmyk
+  self
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="to_grayscale-method" class="method-detail ">
+        <a name="method-i-to_grayscale"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_grayscale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts the <a href="CMYK.html">CMYK</a> colour to a single greyscale
+value. There are undoubtedly multiple methods for this conversion, but only
+a minor variant of the Adobe conversion method will be used:</p>
+
+<pre>g = 1.0 - min(1.0, 0.299 * c + 0.587 * m + 0.114 * y + k)</pre>
+
+<p>This treats the CMY values similarly to <a href="YIQ.html">YIQ</a> (NTSC)
+values and then adds the level of black. This is a variant of the Adobe
+version because it uses the more precise <a href="YIQ.html">YIQ</a> (NTSC)
+conversion values for Y (intensity) rather than the approximates provided
+by Adobe (0.3, 0.59, and 0.11).</p>
+          
+
+          
+          <div class="method-source-code"
+            id="to_grayscale-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 174</span>
+def to_grayscale
+  c = 0.299 * <span class="ruby-ivar">@c</span>.to_f
+  m = 0.587 * <span class="ruby-ivar">@m</span>.to_f
+  y = 0.114 * <span class="ruby-ivar">@y</span>.to_f
+  g = 1.0 - [1.0, c + m + y + <span class="ruby-ivar">@k</span>].min
+  <span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(g)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="CMYK.html#method-i-to_greyscale">to_greyscale</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="to_greyscale-method" class="method-detail method-alias">
+        <a name="method-i-to_greyscale"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_greyscale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="CMYK.html#method-i-to_grayscale">to_grayscale</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="to_hsl-method" class="method-detail ">
+        <a name="method-i-to_hsl"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_hsl</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts to <a href="RGB.html">RGB</a> then <a href="HSL.html">HSL</a>.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="to_hsl-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 197</span>
+def to_hsl
+  to_rgb.to_hsl
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="to_rgb-method" class="method-detail ">
+        <a name="method-i-to_rgb"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_rgb</span><span
+            class="method-args">(use_adobe_method = false)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts the <a href="CMYK.html">CMYK</a> colour to <a
+href="RGB.html">RGB</a>. Most colour experts strongly suggest that this is
+not a good idea (some even suggesting that it’s a very bad idea). <a
+href="CMYK.html">CMYK</a> represents additive percentages of inks on white
+paper, whereas <a href="RGB.html">RGB</a> represents mixed colour
+intensities on a black screen.</p>
+
+<p>However, the colour conversion can be done, and there are two different
+methods for the conversion that provide slightly different results. Adobe
+PDF conversions are done with the first form.</p>
+
+<pre>  # Adobe PDF Display Formula
+r = 1.0 - min(1.0, c + k)
+g = 1.0 - min(1.0, m + k)
+b = 1.0 - min(1.0, y + k)
+
+  # Other
+r = 1.0 - (c * (1.0 - k) + k)
+g = 1.0 - (m * (1.0 - k) + k)
+b = 1.0 - (y * (1.0 - k) + k)</pre>
+
+<p>If we have a <a href="CMYK.html">CMYK</a> colour of [33% 66% 83% 25%], the
+first method will give an approximate <a href="RGB.html">RGB</a> colour of
+(107, 23, 0) or #6b1700. The second method will give an approximate <a
+href="RGB.html">RGB</a> colour of (128, 65, 33) or #804121. Which is
+correct? Although the colours may seem to be drastically different in the
+<a href="RGB.html">RGB</a> colour space, they are very similar colours,
+differing mostly in intensity. The first is a darker, slightly redder
+brown; the second is a lighter brown.</p>
+
+<p>Because of this subtlety, both methods are now offered for conversion. The
+Adobe method is not used by default; to enable it, pass <tt>true</tt> to <a
+href="CMYK.html#method-i-to_rgb">to_rgb</a>.</p>
+
+<p>Future versions of <a href="../Color.html">Color</a> may offer other
+conversion mechanisms that offer greater colour fidelity, including
+recognition of ICC colour profiles.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="to_rgb-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 151</span>
+def to_rgb(use_adobe_method = false)
+  if use_adobe_method
+    r = 1.0 - [1.0, <span class="ruby-ivar">@c</span> + <span class="ruby-ivar">@k</span>].min
+    g = 1.0 - [1.0, <span class="ruby-ivar">@m</span> + <span class="ruby-ivar">@k</span>].min
+    b = 1.0 - [1.0, <span class="ruby-ivar">@y</span> + <span class="ruby-ivar">@k</span>].min
+  else
+    r = 1.0 - (<span class="ruby-ivar">@c</span>.to_f * (1.0 - <span class="ruby-ivar">@k</span>.to_f) + <span class="ruby-ivar">@k</span>.to_f)
+    g = 1.0 - (<span class="ruby-ivar">@m</span>.to_f * (1.0 - <span class="ruby-ivar">@k</span>.to_f) + <span class="ruby-ivar">@k</span>.to_f)
+    b = 1.0 - (<span class="ruby-ivar">@y</span>.to_f * (1.0 - <span class="ruby-ivar">@k</span>.to_f) + <span class="ruby-ivar">@k</span>.to_f)
+  end
+  <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_fraction(r, g, b)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="to_yiq-method" class="method-detail ">
+        <a name="method-i-to_yiq"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">to_yiq</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Converts to <a href="RGB.html">RGB</a> then <a href="YIQ.html">YIQ</a>.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="to_yiq-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 192</span>
+def to_yiq
+  to_rgb.to_yiq
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="y-method" class="method-detail ">
+        <a name="method-i-y"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">y</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the yellow (Y) component of the <a href="CMYK.html">CMYK</a> colour
+as a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="y-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 247</span>
+def y
+  <span class="ruby-ivar">@y</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="y-3D-method" class="method-detail ">
+        <a name="method-i-y-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">y=</span><span
+            class="method-args">(kk)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the yellow (Y) component of the <a href="CMYK.html">CMYK</a> colour as
+a value in the range 0.0 .. 1.0.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="y-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 256</span>
+def y=(kk)
+  <span class="ruby-ivar">@y</span> = <span class="ruby-constant">Color</span>.normalize(kk)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="yellow-method" class="method-detail ">
+        <a name="method-i-yellow"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">yellow</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the yellow (Y) component of the <a href="CMYK.html">CMYK</a> colour
+as a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="yellow-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 242</span>
+def yellow
+  <span class="ruby-ivar">@y</span> * 100.0
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="yellow-3D-method" class="method-detail ">
+        <a name="method-i-yellow-3D"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">yellow=</span><span
+            class="method-args">(yy)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the yellow (Y) component of the <a href="CMYK.html">CMYK</a> colour as
+a percentage value.</p>
+          
+
+          
+          <div class="method-source-code"
+            id="yellow-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/color/cmyk.rb, line 251</span>
+def yellow=(yy)
+  <span class="ruby-ivar">@y</span> = <span class="ruby-constant">Color</span>.normalize(yy / 100.0)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

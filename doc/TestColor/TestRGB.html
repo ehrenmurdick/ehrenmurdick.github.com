@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: TestColor::TestRGB</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../test/test_rgb_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="test/test_rgb.rb">test/test_rgb.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Test::Unit::TestCase</p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-test_add">#test_add</a></li>
+          
+          <li><a href="#method-i-test_adjust_brightness">#test_adjust_brightness</a></li>
+          
+          <li><a href="#method-i-test_adjust_hue">#test_adjust_hue</a></li>
+          
+          <li><a href="#method-i-test_adjust_saturation">#test_adjust_saturation</a></li>
+          
+          <li><a href="#method-i-test_blue">#test_blue</a></li>
+          
+          <li><a href="#method-i-test_brightness">#test_brightness</a></li>
+          
+          <li><a href="#method-i-test_darken_by">#test_darken_by</a></li>
+          
+          <li><a href="#method-i-test_from_html">#test_from_html</a></li>
+          
+          <li><a href="#method-i-test_green">#test_green</a></li>
+          
+          <li><a href="#method-i-test_html">#test_html</a></li>
+          
+          <li><a href="#method-i-test_inspect">#test_inspect</a></li>
+          
+          <li><a href="#method-i-test_lighten_by">#test_lighten_by</a></li>
+          
+          <li><a href="#method-i-test_mean_grayscale">#test_mean_grayscale</a></li>
+          
+          <li><a href="#method-i-test_mix_with">#test_mix_with</a></li>
+          
+          <li><a href="#method-i-test_pdf_fill">#test_pdf_fill</a></li>
+          
+          <li><a href="#method-i-test_red">#test_red</a></li>
+          
+          <li><a href="#method-i-test_subtract">#test_subtract</a></li>
+          
+          <li><a href="#method-i-test_to_cmyk">#test_to_cmyk</a></li>
+          
+          <li><a href="#method-i-test_to_grayscale">#test_to_grayscale</a></li>
+          
+          <li><a href="#method-i-test_to_hsl">#test_to_hsl</a></li>
+          
+          <li><a href="#method-i-test_to_rgb">#test_to_rgb</a></li>
+          
+          <li><a href="#method-i-test_to_yiq">#test_to_yiq</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="../Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="../Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="../Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="../README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="../Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Color.html">Color</a></li>
+        
+          <li><a href="../Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="../Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="../Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="../Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="../Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="../Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="../Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="../Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="../Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="../Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="../Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="../TestColor.html">TestColor</a></li>
+        
+          <li><a href="../TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="../TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="../TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="../TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="../TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="../TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="../TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="../TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="../TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="../ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="../ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="../ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="../ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="../ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="../ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="../ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="../ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="../ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="../Errno.html">Errno</a></li>
+        
+          <li><a href="../Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="../Installer.html">Installer</a></li>
+        
+          <li><a href="../Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="../Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="../File.html">File</a></li>
+        
+          <li><a href="../FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="../HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="../Object.html">Object</a></li>
+        
+          <li><a href="../SetupError.html">SetupError</a></li>
+        
+          <li><a href="../ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="../ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">TestColor::TestRGB</h1>
+
+    <div id="description">
+      
+    </div>
+
+    <!-- Constants -->
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="test_add-method" class="method-detail ">
+        <a name="method-i-test_add"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_add</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_add-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 292</span>
+def test_add
+  assert_nothing_raised { <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span> + <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span> }
+  white = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span> + <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span> 
+  assert_not_nil(white)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>, white) 
+
+  c1 = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x80, 0x80, 0x00)
+  c2 = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x45, 0x20, 0xf0)
+  cr = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0xc5, 0xa0, 0xf0)
+
+  assert_equal(cr, c1 + c2)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_adjust_brightness-method" class="method-detail ">
+        <a name="method-i-test_adjust_brightness"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_adjust_brightness</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_adjust_brightness-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 20</span>
+def test_adjust_brightness
+  assert_equal(&quot;#1a1aff&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.adjust_brightness(10).html)
+  assert_equal(&quot;#0000e6&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.adjust_brightness(-10).html)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_adjust_hue-method" class="method-detail ">
+        <a name="method-i-test_adjust_hue"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_adjust_hue</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_adjust_hue-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 25</span>
+def test_adjust_hue
+  assert_equal(&quot;#6600ff&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.adjust_hue(10).html)
+  assert_equal(&quot;#0066ff&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.adjust_hue(-10).html)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_adjust_saturation-method" class="method-detail ">
+        <a name="method-i-test_adjust_saturation"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_adjust_saturation</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_adjust_saturation-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 30</span>
+def test_adjust_saturation
+  assert_equal(&quot;#ef9374&quot;,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">DarkSalmon</span>.adjust_saturation(10).html)
+  assert_equal(&quot;#e39980&quot;,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">DarkSalmon</span>.adjust_saturation(-10).html)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_blue-method" class="method-detail ">
+        <a name="method-i-test_blue"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_blue</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_blue-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 64</span>
+def test_blue
+  blue = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.dup
+  assert_in_delta(1.0, blue.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(255, blue.blue, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(100, blue.blue_p, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { blue.blue_p = 33 }
+  assert_in_delta(0.33, blue.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { blue.blue = 330 }
+  assert_in_delta(1.0, blue.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { blue.b = -3.3 }
+  assert_in_delta(0.0, blue.b, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_brightness-method" class="method-detail ">
+        <a name="method-i-test_brightness"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_brightness</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_brightness-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 77</span>
+def test_brightness
+  assert_in_delta(0.0, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.brightness, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Grey50</span>.brightness, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(1.0, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.brightness, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_darken_by-method" class="method-detail ">
+        <a name="method-i-test_darken_by"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_darken_by</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_darken_by-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 83</span>
+def test_darken_by
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.darken_by(50).b,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_from_html-method" class="method-detail ">
+        <a name="method-i-test_from_html"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_from_html</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_from_html-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 325</span>
+def test_from_html
+  assert_equal(&quot;RGB [#333333]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#333&quot;).inspect)
+  assert_equal(&quot;RGB [#333333]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(<span class="ruby-string">&quot;333&quot;</span>).inspect)
+  assert_equal(&quot;RGB [#555555]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#555555&quot;).inspect)
+  assert_equal(&quot;RGB [#555555]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(<span class="ruby-string">&quot;555555&quot;</span>).inspect)
+  assert_raises(<span class="ruby-constant">ArgumentError</span>) { <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#5555555&quot;) }
+  assert_raises(<span class="ruby-constant">ArgumentError</span>) { <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(<span class="ruby-string">&quot;5555555&quot;</span>) }
+  assert_raises(<span class="ruby-constant">ArgumentError</span>) { <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#55555&quot;) }
+  assert_raises(<span class="ruby-constant">ArgumentError</span>) { <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(<span class="ruby-string">&quot;55555&quot;</span>) }
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_green-method" class="method-detail ">
+        <a name="method-i-test_green"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_green</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_green-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 51</span>
+def test_green
+  lime = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.dup
+  assert_in_delta(1.0, lime.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(100, lime.green_p, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(255, lime.green, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { lime.green_p = 33 }
+  assert_in_delta(0.33, lime.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { lime.green = 330 }
+  assert_in_delta(1.0, lime.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { lime.g = -3.3 }
+  assert_in_delta(0.0, lime.g, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_html-method" class="method-detail ">
+        <a name="method-i-test_html"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_html</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_html-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 88</span>
+def test_html
+  assert_equal(&quot;#000000&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.html)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#000000&quot;))
+  assert_equal(&quot;#0000ff&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.html)
+  assert_equal(&quot;#00ff00&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.html)
+  assert_equal(&quot;#ff0000&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.html)
+  assert_equal(&quot;#ffffff&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.html)
+
+  assert_equal(<span class="ruby-string">&quot;rgb(0.00%, 0.00%, 0.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.css_rgb)
+  assert_equal(<span class="ruby-string">&quot;rgb(0.00%, 0.00%, 100.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.css_rgb)
+  assert_equal(<span class="ruby-string">&quot;rgb(0.00%, 100.00%, 0.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.css_rgb)
+  assert_equal(<span class="ruby-string">&quot;rgb(100.00%, 0.00%, 0.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.css_rgb)
+  assert_equal(<span class="ruby-string">&quot;rgb(100.00%, 100.00%, 100.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.css_rgb)
+
+  assert_equal(<span class="ruby-string">&quot;rgba(0.00%, 0.00%, 0.00%, 1.00)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.css_rgba)
+  assert_equal(<span class="ruby-string">&quot;rgba(0.00%, 0.00%, 100.00%, 1.00)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.css_rgba)
+  assert_equal(<span class="ruby-string">&quot;rgba(0.00%, 100.00%, 0.00%, 1.00)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.css_rgba)
+  assert_equal(<span class="ruby-string">&quot;rgba(100.00%, 0.00%, 0.00%, 1.00)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.css_rgba)
+  assert_equal(<span class="ruby-string">&quot;rgba(100.00%, 100.00%, 100.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.css_rgba)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_inspect-method" class="method-detail ">
+        <a name="method-i-test_inspect"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_inspect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_inspect-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 336</span>
+def test_inspect
+  assert_equal(&quot;RGB [#000000]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.inspect)
+  assert_equal(&quot;RGB [#0000ff]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.inspect)
+  assert_equal(&quot;RGB [#00ff00]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.inspect)
+  assert_equal(&quot;RGB [#ff0000]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.inspect)
+  assert_equal(&quot;RGB [#ffffff]&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.inspect)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_lighten_by-method" class="method-detail ">
+        <a name="method-i-test_lighten_by"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_lighten_by</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_lighten_by-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 110</span>
+def test_lighten_by
+  assert_in_delta(1.0, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.lighten_by(50).b,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.lighten_by(50).r,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.lighten_by(50).g,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_mean_grayscale-method" class="method-detail ">
+        <a name="method-i-test_mean_grayscale"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_mean_grayscale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_mean_grayscale-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 316</span>
+def test_mean_grayscale
+  c1        = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x85, 0x80, 0x00)
+  c1_max    = assert_nothing_raised { c1.max_rgb_as_greyscale }
+  c1_max    = c1.max_rgb_as_greyscale
+  c1_result = <span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0x85 / 255.0)
+
+  assert_equal(c1_result, c1_max)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_mix_with-method" class="method-detail ">
+        <a name="method-i-test_mix_with"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_mix_with</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_mix_with-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 119</span>
+def test_mix_with
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>, 50).r,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.0, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>, 50).g,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>, 50).b,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>, 50).r,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.0, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>, 50).g,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(0.5, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.mix_with(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>, 50).b,
+                  <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_pdf_fill-method" class="method-detail ">
+        <a name="method-i-test_pdf_fill"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_pdf_fill</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_pdf_fill-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 134</span>
+def test_pdf_fill
+  assert_equal(<span class="ruby-string">&quot;0.000 0.000 0.000 rg&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;0.000 0.000 1.000 rg&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;0.000 1.000 0.000 rg&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;1.000 0.000 0.000 rg&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;1.000 1.000 1.000 rg&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.pdf_fill)
+  assert_equal(<span class="ruby-string">&quot;0.000 0.000 0.000 RG&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.pdf_stroke)
+  assert_equal(<span class="ruby-string">&quot;0.000 0.000 1.000 RG&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.pdf_stroke)
+  assert_equal(<span class="ruby-string">&quot;0.000 1.000 0.000 RG&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.pdf_stroke)
+  assert_equal(<span class="ruby-string">&quot;1.000 0.000 0.000 RG&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.pdf_stroke)
+  assert_equal(<span class="ruby-string">&quot;1.000 1.000 1.000 RG&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">White</span>.pdf_stroke)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_red-method" class="method-detail ">
+        <a name="method-i-test_red"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_red</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_red-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 37</span>
+def test_red
+  red = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.dup
+  assert_in_delta(1.0, red.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(100, red.red_p, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(255, red.red, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_in_delta(1.0, red.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { red.red_p = 33 }
+  assert_in_delta(0.33, red.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { red.red = 330 }
+  assert_in_delta(1.0, red.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+  assert_nothing_raised { red.r = -3.3 }
+  assert_in_delta(0.0, red.r, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_subtract-method" class="method-detail ">
+        <a name="method-i-test_subtract"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_subtract</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_subtract-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 305</span>
+def test_subtract
+  black = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">LightCoral</span> - <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Honeydew</span>
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>, black) 
+
+  c1 = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x85, 0x80, 0x00)
+  c2 = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x40, 0x20, 0xf0)
+  cr = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.new(0x45, 0x60, 0x00)
+
+  assert_equal(cr, c1 - c2)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_cmyk-method" class="method-detail ">
+        <a name="method-i-test_to_cmyk"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_cmyk</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_cmyk-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 147</span>
+def test_to_cmyk
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(0, 0, 0, 100), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(0, 0, 100, 0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(100, 0, 0, 0), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(0, 100, 0, 0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(0, 100, 100, 0), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(100, 0, 100, 0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(100, 100, 0, 0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(10.32, 60.52, 10.32, 39.47),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(10.90, 59.13, 59.13, 24.39),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(0, 63.14, 18.43, 0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.to_cmyk)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">CMYK</span>.new(7.39, 62.69, 62.69, 37.32),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.to_cmyk)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_grayscale-method" class="method-detail ">
+        <a name="method-i-test_to_grayscale"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_grayscale</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_grayscale-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 170</span>
+def test_to_grayscale
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.5),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.from_fraction(0.2510),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.new(40.58),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.new(68.43),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.to_grayscale)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">GrayScale</span>.new(27.65),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.to_grayscale)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_hsl-method" class="method-detail ">
+        <a name="method-i-test_to_hsl"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_hsl</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_hsl-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 196</span>
+def test_to_hsl
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(60, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(180, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(300, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(0, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(120, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(240, 100, 50), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(300, 100, 25.10),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(0, 59.42, 40.59),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(317.5, 100, 68.43),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.to_hsl)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(0, 100, 27.64),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.to_hsl)
+
+  assert_equal(<span class="ruby-string">&quot;hsl(0.00, 0.00%, 0.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(60.00, 100.00%, 50.00%)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(180.00, 100.00%, 50.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(300.00, 100.00%, 50.00%)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(0.00, 100.00%, 50.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(120.00, 100.00%, 50.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(240.00, 100.00%, 50.00%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(300.00, 100.00%, 25.10%)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(0.00, 59.42%, 40.59%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(317.52, 100.00%, 68.43%)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.css_hsl)
+  assert_equal(<span class="ruby-string">&quot;hsl(0.00, 100.00%, 27.65%)&quot;</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.css_hsl)
+
+  assert_equal(<span class="ruby-string">&quot;hsla(0.00, 0.00%, 0.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(60.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(180.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(300.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(0.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(120.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(240.00, 100.00%, 50.00%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(300.00, 100.00%, 25.10%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(0.00, 59.42%, 40.59%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(317.52, 100.00%, 68.43%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.css_hsla)
+  assert_equal(<span class="ruby-string">&quot;hsla(0.00, 100.00%, 27.65%, 1.00)&quot;</span>,
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.css_hsla)
+
+  <span class="ruby-comment"># The following tests a bug reported by Jean Krohn on 10 June 2006</span>
+  <span class="ruby-comment"># where HSL conversion was not quite correct, resulting in a bad</span>
+  <span class="ruby-comment"># round-trip.</span>
+  assert_equal(&quot;#008800&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#008800&quot;).to_hsl.html)
+  assert_not_equal(&quot;#002288&quot;, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_html(&quot;#008800&quot;).to_hsl.html)
+
+  <span class="ruby-comment"># The following tests a bug reported by Adam Johnson on 29 October</span>
+  <span class="ruby-comment"># 2010.</span>
+  hsl = <span class="ruby-constant">Color</span>::<span class="ruby-constant">HSL</span>.new(262, 67, 42)
+  c = <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>.from_fraction(0.34496, 0.1386, 0.701399).to_hsl
+  assert_in_delta hsl.h, c.h, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>, <span class="ruby-string">&quot;Hue&quot;</span>
+  assert_in_delta hsl.s, c.s, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>, <span class="ruby-string">&quot;Saturation&quot;</span>
+  assert_in_delta hsl.l, c.l, <span class="ruby-constant">Color</span>::<span class="ruby-constant">COLOR_TOLERANCE</span>, <span class="ruby-string">&quot;Luminance&quot;</span>
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_rgb-method" class="method-detail ">
+        <a name="method-i-test_to_rgb"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_rgb</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_rgb-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 268</span>
+def test_to_rgb
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_rgb)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="test_to_yiq-method" class="method-detail ">
+        <a name="method-i-test_to_yiq"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">test_to_yiq</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="test_to_yiq-source">
+<pre>
+<span class="ruby-comment"># File test/test_rgb.rb, line 272</span>
+def test_to_yiq
+  assert_kind_of(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new, <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Black</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(88.6, 32.1, 0), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Yellow</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(70.1, 0, 0), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cyan</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(41.3, 27.5, 52.3),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Magenta</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(29.9, 59.6, 21.2), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Red</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(58.7, 0, 0), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Lime</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(11.4, 0, 31.1), <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Blue</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(20.73, 13.80, 26.25),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Purple</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(30.89, 28.75, 10.23),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Brown</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(60.84, 23.28, 27.29),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Carnation</span>.to_yiq)
+  assert_equal(<span class="ruby-constant">Color</span>::<span class="ruby-constant">YIQ</span>.new(16.53, 32.96, 11.72),
+               <span class="ruby-constant">Color</span>::<span class="ruby-constant">RGB</span>::<span class="ruby-constant">Cayenne</span>.to_yiq)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

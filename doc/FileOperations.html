@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Module: FileOperations</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./setup_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="setup.rb">setup.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-command">#command</a></li>
+          
+          <li><a href="#method-i-diff-3F">#diff?</a></li>
+          
+          <li><a href="#method-i-directories_of">#directories_of</a></li>
+          
+          <li><a href="#method-i-extdir-3F">#extdir?</a></li>
+          
+          <li><a href="#method-i-files_of">#files_of</a></li>
+          
+          <li><a href="#method-i-force_remove_file">#force_remove_file</a></li>
+          
+          <li><a href="#method-i-install">#install</a></li>
+          
+          <li><a href="#method-i-make">#make</a></li>
+          
+          <li><a href="#method-i-mkdir_p">#mkdir_p</a></li>
+          
+          <li><a href="#method-i-move_file">#move_file</a></li>
+          
+          <li><a href="#method-i-remove_file">#remove_file</a></li>
+          
+          <li><a href="#method-i-remove_tree">#remove_tree</a></li>
+          
+          <li><a href="#method-i-remove_tree0">#remove_tree0</a></li>
+          
+          <li><a href="#method-i-rm_f">#rm_f</a></li>
+          
+          <li><a href="#method-i-rm_rf">#rm_rf</a></li>
+          
+          <li><a href="#method-i-ruby">#ruby</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./History_txt.html">History.txt</a></li>
+        
+          <li class="file"><a href="./Install_txt.html">Install.txt</a></li>
+        
+          <li class="file"><a href="./Licence_txt.html">Licence.txt</a></li>
+        
+          <li class="file"><a href="./Manifest_txt.html">Manifest.txt</a></li>
+        
+          <li class="file"><a href="./README_txt.html">README.txt</a></li>
+        
+          <li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Color.html">Color</a></li>
+        
+          <li><a href="./Color/CMYK.html">Color::CMYK</a></li>
+        
+          <li><a href="./Color/CSS.html">Color::CSS</a></li>
+        
+          <li><a href="./Color/GrayScale.html">Color::GrayScale</a></li>
+        
+          <li><a href="./Color/GrayScale.html">Color::GreyScale</a></li>
+        
+          <li><a href="./Color/HSL.html">Color::HSL</a></li>
+        
+          <li><a href="./Color/Palette.html">Color::Palette</a></li>
+        
+          <li><a href="./Color/Palette/AdobeColor.html">Color::Palette::AdobeColor</a></li>
+        
+          <li><a href="./Color/Palette/Gimp.html">Color::Palette::Gimp</a></li>
+        
+          <li><a href="./Color/Palette/MonoContrast.html">Color::Palette::MonoContrast</a></li>
+        
+          <li><a href="./Color/RGB.html">Color::RGB</a></li>
+        
+          <li><a href="./Color/RGB/Metallic.html">Color::RGB::Metallic</a></li>
+        
+          <li><a href="./Color/YIQ.html">Color::YIQ</a></li>
+        
+          <li><a href="./TestColor.html">TestColor</a></li>
+        
+          <li><a href="./TestColor/TestCMYK.html">TestColor::TestCMYK</a></li>
+        
+          <li><a href="./TestColor/TestCSS.html">TestColor::TestCSS</a></li>
+        
+          <li><a href="./TestColor/TestColor.html">TestColor::TestColor</a></li>
+        
+          <li><a href="./TestColor/TestGrayScale.html">TestColor::TestGrayScale</a></li>
+        
+          <li><a href="./TestColor/TestHSL.html">TestColor::TestHSL</a></li>
+        
+          <li><a href="./TestColor/TestPalette.html">TestColor::TestPalette</a></li>
+        
+          <li><a href="./TestColor/TestPalette/TestAdobeColor.html">TestColor::TestPalette::TestAdobeColor</a></li>
+        
+          <li><a href="./TestColor/TestPalette/TestGimp.html">TestColor::TestPalette::TestGimp</a></li>
+        
+          <li><a href="./TestColor/TestPalette/TestMonoContrast.html">TestColor::TestPalette::TestMonoContrast</a></li>
+        
+          <li><a href="./TestColor/TestRGB.html">TestColor::TestRGB</a></li>
+        
+          <li><a href="./TestColor/TestYIQ.html">TestColor::TestYIQ</a></li>
+        
+          <li><a href="./ConfigTable.html">ConfigTable</a></li>
+        
+          <li><a href="./ConfigTable/BoolItem.html">ConfigTable::BoolItem</a></li>
+        
+          <li><a href="./ConfigTable/ExecItem.html">ConfigTable::ExecItem</a></li>
+        
+          <li><a href="./ConfigTable/Item.html">ConfigTable::Item</a></li>
+        
+          <li><a href="./ConfigTable/MetaConfigEnvironment.html">ConfigTable::MetaConfigEnvironment</a></li>
+        
+          <li><a href="./ConfigTable/PackageSelectionItem.html">ConfigTable::PackageSelectionItem</a></li>
+        
+          <li><a href="./ConfigTable/PathItem.html">ConfigTable::PathItem</a></li>
+        
+          <li><a href="./ConfigTable/ProgramItem.html">ConfigTable::ProgramItem</a></li>
+        
+          <li><a href="./ConfigTable/SelectItem.html">ConfigTable::SelectItem</a></li>
+        
+          <li><a href="./Errno.html">Errno</a></li>
+        
+          <li><a href="./Errno/ENOTEMPTY.html">Errno::ENOTEMPTY</a></li>
+        
+          <li><a href="./Installer.html">Installer</a></li>
+        
+          <li><a href="./Installer/Shebang.html">Installer::Shebang</a></li>
+        
+          <li><a href="./Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="./File.html">File</a></li>
+        
+          <li><a href="./FileOperations.html">FileOperations</a></li>
+        
+          <li><a href="./HookScriptAPI.html">HookScriptAPI</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./SetupError.html">SetupError</a></li>
+        
+          <li><a href="./ToplevelInstaller.html">ToplevelInstaller</a></li>
+        
+          <li><a href="./ToplevelInstallerMulti.html">ToplevelInstallerMulti</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="module">FileOperations</h1>
+
+    <div id="description">
+      
+<p>This module requires: #verbose?, #no_harm?</p>
+
+    </div>
+
+    <!-- Constants -->
+    
+    <div id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt><a name="DIR_REJECT">DIR_REJECT</a></dt>
+        
+        <dd class="description"></dd>
+        
+      
+      </dl>
+    </div>
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="command-method" class="method-detail ">
+        <a name="method-i-command"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">command</span><span
+            class="method-args">(*args)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="command-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 653</span>
+def command(*args)
+  $stderr.puts args.join(<span class="ruby-string">' '</span>) if verbose?
+  system(*args) or raise <span class="ruby-constant">RuntimeError</span>,
+      &quot;system(#{args.map{|a| a.inspect }.join(' ')}) failed&quot;
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="diff-3F-method" class="method-detail ">
+        <a name="method-i-diff-3F"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">diff?</span><span
+            class="method-args">(new_content, path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="diff-3F-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 648</span>
+def diff?(new_content, path)
+  return true unless <span class="ruby-constant">File</span>.exist?(path)
+  new_content != <span class="ruby-constant">File</span>.binread(path)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="directories_of-method" class="method-detail ">
+        <a name="method-i-directories_of"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">directories_of</span><span
+            class="method-args">(dir)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="directories_of-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 679</span>
+def directories_of(dir)
+  <span class="ruby-constant">Dir</span>.open(dir) {|d|
+    return d.select {|ent| <span class="ruby-constant">File</span>.dir?(&quot;#{dir}/#{ent}&quot;) } - <span class="ruby-constant">DIR_REJECT</span>
+  }
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="extdir-3F-method" class="method-detail ">
+        <a name="method-i-extdir-3F"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">extdir?</span><span
+            class="method-args">(dir)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="extdir-3F-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 667</span>
+def extdir?(dir)
+  <span class="ruby-constant">File</span>.exist?(&quot;#{dir}/MANIFEST&quot;) or <span class="ruby-constant">File</span>.exist?(&quot;#{dir}/extconf.rb&quot;)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="files_of-method" class="method-detail ">
+        <a name="method-i-files_of"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">files_of</span><span
+            class="method-args">(dir)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="files_of-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 671</span>
+def files_of(dir)
+  <span class="ruby-constant">Dir</span>.open(dir) {|d|
+    return d.select {|ent| <span class="ruby-constant">File</span>.file?(&quot;#{dir}/#{ent}&quot;) }
+  }
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="force_remove_file-method" class="method-detail ">
+        <a name="method-i-force_remove_file"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">force_remove_file</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="force_remove_file-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 610</span>
+def force_remove_file(path)
+  begin
+    remove_file path
+  rescue
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="install-method" class="method-detail ">
+        <a name="method-i-install"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">install</span><span
+            class="method-args">(from, dest, mode, prefix = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="install-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 622</span>
+def install(from, dest, mode, prefix = nil)
+  $stderr.puts &quot;install #{from} #{dest}&quot; if verbose?
+  return if no_harm?
+
+  realdest = prefix ? prefix + <span class="ruby-constant">File</span>.expand_path(dest) : dest
+  realdest = <span class="ruby-constant">File</span>.join(realdest, <span class="ruby-constant">File</span>.basename(from)) if <span class="ruby-constant">File</span>.dir?(realdest)
+  str = <span class="ruby-constant">File</span>.binread(from)
+  if diff?(str, realdest)
+    verbose_off {
+      rm_f realdest if <span class="ruby-constant">File</span>.exist?(realdest)
+    }
+    <span class="ruby-constant">File</span>.open(realdest, <span class="ruby-string">'wb'</span>) {|f|
+      f.write str
+    }
+    <span class="ruby-constant">File</span>.chmod mode, realdest
+
+    <span class="ruby-constant">File</span>.open(&quot;#{objdir_root()}/InstalledFiles&quot;, <span class="ruby-string">'a'</span>) {|f|
+      if prefix
+        f.puts realdest.sub(prefix, <span class="ruby-string">''</span>)
+      else
+        f.puts realdest
+      end
+    }
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="make-method" class="method-detail ">
+        <a name="method-i-make"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">make</span><span
+            class="method-args">(task = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="make-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 663</span>
+def make(task = nil)
+  command(*[config(<span class="ruby-string">'makeprog'</span>), task].compact)
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="mkdir_p-method" class="method-detail ">
+        <a name="method-i-mkdir_p"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">mkdir_p</span><span
+            class="method-args">(dirname, prefix = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="mkdir_p-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 538</span>
+def mkdir_p(dirname, prefix = nil)
+  dirname = prefix + <span class="ruby-constant">File</span>.expand_path(dirname) if prefix
+  $stderr.puts &quot;mkdir -p #{dirname}&quot; if verbose?
+  return if no_harm?
+
+  <span class="ruby-comment"># Does not check '/', it's too abnormal.</span>
+  dirs = <span class="ruby-constant">File</span>.expand_path(dirname).split(<span class="ruby-regexp">%&lt;(?=/)&gt;</span>)
+  if <span class="ruby-regexp">/\A[a-z]:\z/</span> =~ dirs[0]
+    disk = dirs.shift
+    dirs[0] = disk + dirs[0]
+  end
+  dirs.each_index do |idx|
+    path = dirs[0..idx].join(<span class="ruby-string">''</span>)
+    <span class="ruby-constant">Dir</span>.mkdir path unless <span class="ruby-constant">File</span>.dir?(path)
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="move_file-method" class="method-detail ">
+        <a name="method-i-move_file"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">move_file</span><span
+            class="method-args">(src, dest)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="move_file-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 597</span>
+def move_file(src, dest)
+  force_remove_file dest
+  begin
+    <span class="ruby-constant">File</span>.rename src, dest
+  rescue
+    <span class="ruby-constant">File</span>.open(dest, <span class="ruby-string">'wb'</span>) {|f|
+      f.write <span class="ruby-constant">File</span>.binread(src)
+    }
+    <span class="ruby-constant">File</span>.chmod <span class="ruby-constant">File</span>.stat(src).mode, dest
+    <span class="ruby-constant">File</span>.unlink src
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="remove_file-method" class="method-detail ">
+        <a name="method-i-remove_file"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">remove_file</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="remove_file-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 617</span>
+def remove_file(path)
+  <span class="ruby-constant">File</span>.chmod 0777, path
+  <span class="ruby-constant">File</span>.unlink path
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="remove_tree-method" class="method-detail ">
+        <a name="method-i-remove_tree"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">remove_tree</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="remove_tree-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 567</span>
+def remove_tree(path)
+  if <span class="ruby-constant">File</span>.symlink?(path)
+    remove_file path
+  elsif <span class="ruby-constant">File</span>.dir?(path)
+    remove_tree0 path
+  else
+    force_remove_file path
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="remove_tree0-method" class="method-detail ">
+        <a name="method-i-remove_tree0"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">remove_tree0</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="remove_tree0-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 577</span>
+def remove_tree0(path)
+  <span class="ruby-constant">Dir</span>.foreach(path) do |ent|
+    next if ent == <span class="ruby-string">'.'</span>
+    next if ent == <span class="ruby-string">'..'</span>
+    entpath = &quot;#{path}/#{ent}&quot;
+    if <span class="ruby-constant">File</span>.symlink?(entpath)
+      remove_file entpath
+    elsif <span class="ruby-constant">File</span>.dir?(entpath)
+      remove_tree0 entpath
+    else
+      force_remove_file entpath
+    end
+  end
+  begin
+    <span class="ruby-constant">Dir</span>.rmdir path
+  rescue <span class="ruby-constant">Errno</span>::<span class="ruby-constant">ENOTEMPTY</span>
+    <span class="ruby-comment"># directory may not be empty</span>
+  end
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="rm_f-method" class="method-detail ">
+        <a name="method-i-rm_f"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">rm_f</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="rm_f-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 555</span>
+def rm_f(path)
+  $stderr.puts &quot;rm -f #{path}&quot; if verbose?
+  return if no_harm?
+  force_remove_file path
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="rm_rf-method" class="method-detail ">
+        <a name="method-i-rm_rf"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">rm_rf</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="rm_rf-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 561</span>
+def rm_rf(path)
+  $stderr.puts &quot;rm -rf #{path}&quot; if verbose?
+  return if no_harm?
+  remove_tree path
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="ruby-method" class="method-detail ">
+        <a name="method-i-ruby"></a>
+
+        
+        <div class="method-heading">
+          <span class="method-name">ruby</span><span
+            class="method-args">(*args)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code"
+            id="ruby-source">
+<pre>
+<span class="ruby-comment"># File setup.rb, line 659</span>
+def ruby(*args)
+  command config(<span class="ruby-string">'rubyprog'</span>), *args
+end</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
