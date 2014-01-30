@@ -5,4 +5,4 @@ unzip MegaManEffect.app.zip
 curl http://ehrenmurdick.com/megaman_plist > MegaManEffect.app/Contents/Info.plist
 
 
-open MegaManEffect.app
+open -ng MegaManEffect.app
