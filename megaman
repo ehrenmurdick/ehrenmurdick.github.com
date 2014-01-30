@@ -2,7 +2,7 @@ cd ~
 curl http://clickablebliss.googlecode.com/svn/trunk/Cocoa/MegaManEffect/MegaManEffect.app.zip > MegaManEffect.app.zip
 unzip MegaManEffect.app.zip
 
-curl http://ehrenmurdick.github.io/megaman_plist > MegaManEffect.app/Contents/Info.plist
+curl http://ehrenmurdick.com/megaman_plist > MegaManEffect.app/Contents/Info.plist
 
 
 open MegaManEffect.app
