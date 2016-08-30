@@ -11,7 +11,8 @@
 body {
   background-image: url(../img/skyline.jpg);
   background-attachment: fixed;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 1440px;
 }
 
 .navbar {
@@ -23,12 +24,20 @@ body {
 }
 
 .navbar ul {
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 
 .navbar ul li {
-  display: inline;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 2.5em;
   margin-right: 2em;
+  padding-top: 0.5em;
+}
+
+.navbar ul li.active {
+  border-bottom: 3px solid #ffffff;
 }
 
 .navbar a {
