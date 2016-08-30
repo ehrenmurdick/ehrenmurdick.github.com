@@ -15,6 +15,30 @@ body {
   background-size: 1440px;
 }
 
+.social {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  font-weight: 200;
+}
+
+.social a {
+  color: white;
+  font-size: 1.8em;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+  height: 2.1em;
+}
+
+.social ul li {
+  display: inline;
+  margin-right: 0.2em;
+}
+
 .navbar {
   background-color: #512DA8;
   position: absolute;
