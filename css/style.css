@@ -11,12 +11,16 @@
 }
 
 body {
-  background-image: url(../img/skyline.jpg);
+  background: url(../img/skyline.jpg) no-repeat center center fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 1440px;
   color: #212121;
   font-family: 'Roboto', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .secondary {
