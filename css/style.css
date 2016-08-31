@@ -13,6 +13,27 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 1440px;
+  color: #212121;
+}
+
+.secondary {
+  color: #757575;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#cards {
+  margin-top: 12em;
+}
+
+.content-card {
+  background-color: #ffffff;
+}
+
+.profile {
+  margin: 2.1rem 0.25em;
 }
 
 .social {
