@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #673AB7;
+  background-color: #607D8B;
   color: white;
   height: 8em;
 }
@@ -14,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: 1440px;
   color: #212121;
+  font-family: 'Roboto', sans-serif;
 }
 
 .secondary {
@@ -25,7 +28,7 @@ h1, h4 {
 }
 
 #cards {
-  margin-top: 10em;
+  margin-top: 3em;
 }
 
 .content-card {
@@ -40,7 +43,7 @@ h1, h4 {
 }
 
 .resources a {
-  color: #212121;
+  color: #009688;
   font-size: 1em;
 }
 
