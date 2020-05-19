@@ -9,11 +9,11 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://ehren.io/funfunfunapp.ipa</string>
+		<string>https://ehren.io/funfunfunapp/funfunfunapp.ipa</string>
 		<key>displayImageURL</key>
-		<string>https://placehold.it/57/?FFA</string>
+		<string>https://placehold.it/57/?text=FFA</string>
 		<key>fullSizeImageURL</key>
-		<string>https://placehold.it/512/?FFA</string>
+		<string>https://placehold.it/512/?text=FFA</string>
 	</dict>
 	<key>method</key>
 	<string>ad-hoc</string>
